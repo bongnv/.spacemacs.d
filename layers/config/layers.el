@@ -6,7 +6,8 @@
     emacs-lisp
     git
     ;; helm
-    ivy
+    (ivy :variables
+         ivy-height 20) 
     ;; markdown
     multiple-cursors
     ;; org
