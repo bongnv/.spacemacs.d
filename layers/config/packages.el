@@ -31,6 +31,7 @@
 
 (defconst config-packages
   '(
+    ivy
     )
   "The list of Lisp packages required by the config layer.
 
@@ -58,6 +59,10 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+(defun config/post-init-ivy ()
+  (setq ivy-height 20)
 
+  (spacemacs/set-leader-keys "ai" 'ivy-resume)
+  )
 
 ;;; packages.el ends here
