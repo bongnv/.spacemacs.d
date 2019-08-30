@@ -32,6 +32,8 @@
 (defconst config-packages
   '(
     ivy
+    lsp
+    projectile
     )
   "The list of Lisp packages required by the config layer.
 
@@ -61,6 +63,15 @@ Each entry is either:
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 (defun config/post-init-ivy ()
   (spacemacs/set-leader-keys "ai" 'ivy-resume)
+  )
+
+(defun config/post-init-lsp ()
+  (setq lsp-enable-links nil)
+  (setq lsp-enable-symbol-highlighting nil)
+  )
+
+(defun config/post-init-projectile ()
+  (setq projectile-enable-caching t)
   )
 
 ;;; packages.el ends here

@@ -32,6 +32,7 @@
 (defconst flow-js2-packages
   '(
     flow-js2-mode
+    js2-mode
     )
   "The list of Lisp packages required by the flow-js2 layer.
 
@@ -65,4 +66,9 @@ Each entry is either:
   (use-package flow-js2-mode
     :defer t
     ))
+
+(defun flow-js2/post-init-js2-mode ()
+  (setq js2-mode-show-parse-errors nil)
+  (setq js2-mode-show-strict-warnings nil)
+  )
 ;;; packages.el ends here

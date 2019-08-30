@@ -461,18 +461,11 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (setq lsp-enable-links nil)
-  (setq lsp-enable-symbol-highlighting nil)
-
-  (setq projectile-enable-caching t)
   (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
   (add-to-list 'default-frame-alist '(ns-appearance . dark))
 
   (setq split-height-threshold nil)
   (setq split-width-threshold 0)
-
-  (setq js2-mode-show-parse-errors nil)
-  (setq js2-mode-show-strict-warnings nil)
 
   ;; (require 'exec-path-from-shell)
   ;; (exec-path-from-shell-copy-env "PATH")
