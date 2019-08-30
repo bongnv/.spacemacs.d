@@ -46,8 +46,8 @@ This function should only modify configuration layer settings."
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
-      gruvbox-theme
-      exec-path-from-shell
+      ;; gruvbox-theme
+      ;; exec-path-from-shell
       ;; flow-js2-mode
    )
 
@@ -474,8 +474,8 @@ before packages are loaded."
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
 
-  (require 'exec-path-from-shell)
-  (exec-path-from-shell-copy-env "PATH")
+  ;; (require 'exec-path-from-shell)
+  ;; (exec-path-from-shell-copy-env "PATH")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
