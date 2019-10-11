@@ -32,7 +32,7 @@
 (defconst config-packages
   '(
     ivy
-    lsp
+    lsp-mode
     projectile
     )
   "The list of Lisp packages required by the config layer.
@@ -65,7 +65,7 @@ Each entry is either:
   (spacemacs/set-leader-keys "ai" 'ivy-resume)
   )
 
-(defun config/post-init-lsp ()
+(defun config/post-init-lsp-mode ()
   (setq lsp-enable-links nil)
   (setq lsp-enable-symbol-highlighting nil)
   )

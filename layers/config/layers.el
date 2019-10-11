@@ -36,5 +36,6 @@
                 javascript-fmt-tool 'web-beautify
                 javascript-backend 'lsp)
     (flow-js2 :location local)
+    python
     ;;
     ))
